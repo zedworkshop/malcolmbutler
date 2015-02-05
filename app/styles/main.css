@@ -1866,11 +1866,13 @@ main {
   background: #0D254C;
   border-top: 10px solid #C80815; }
   .sitefooter p {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
-    font-size: 0.71875rem; }
+    font-size: 0.71875rem;
+    margin: 0; }
     .sitefooter p a {
-      color: inherit; }
+      color: inherit;
+      text-decoration: underline; }
     .sitefooter p img {
       display: inline-block;
       vertical-align: middle;
