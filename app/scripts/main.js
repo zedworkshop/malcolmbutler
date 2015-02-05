@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    $('body').addClass('loaded');
-
     $(".js-jumplink").click(function(e) {
         e.preventDefault();
 

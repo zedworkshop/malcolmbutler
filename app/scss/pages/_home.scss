@@ -21,7 +21,7 @@
 
 		color: #fff;
 		font-family: $header-font-family;
-		font-weight: $font-bold;
+		font-weight: $font-xbold;
 		font-style: italic;
 		text-shadow: rgba(#000, 0.3) 3px 3px 5px;
 
@@ -119,7 +119,6 @@
 				}
 			}
 
-
 			.fontface & {
 				opacity: 0;
 				transform: translateX(30px);
@@ -130,7 +129,8 @@
 				transition-delay: 600ms;
 			}
 
-			.loaded & {
+			.wf-active &,
+			.wf-inactive & {
 				opacity: 1;
 				transform: translateX(0);
 			}

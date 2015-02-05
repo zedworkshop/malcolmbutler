@@ -17,7 +17,16 @@
 
     <script src="scripts/init.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Roboto Condensed']
+      }
+  });
+</script>
+
+<!-- <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'> -->
 </head>
 
 <body class="fullsize">
@@ -142,66 +151,71 @@
                     <h3>Professional career</h3>
 
                     <figure class="photo photo--pull-r">
-                        <img alt="Malcolm Butler and Robert Kraft, courtesy of the Patriots/David Silverman" title="Malcolm Butler and Robert Kraft after winning Super Bowl XLIX" src="./images/mb-02.jpg" />
-                        <figcaption>
-                            Malcolm Butler and Robert Kraft after winning Super Bowl XLIX
-                            <small>Photo courtesy of the Patriots/David Silverman</small>
-                        </figcaption>
-                    </figure>
+                        <picture>
+                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                            <source srcset="/images/mb-02.jpg" media="(min-width: 500px)">
+                                <!--[if IE 9]></video><![endif]-->
+                                <img srcset="/images/mb-02-sm.jpg" alt="Malcolm Butler and Robert Kraft, courtesy of the Patriots/David Silverman">
+                            </picture>
+                            <figcaption>
+                                Malcolm Butler and Robert Kraft after winning Super Bowl XLIX
+                                <small>Photo courtesy of the Patriots/David Silverman</small>
+                            </figcaption>
+                        </figure>
 
-                    <p>On May 19, 2014, Butler signed with the New England Patriots after going undrafted in the 2014 NFL Draft.[5] In his rookie season, Malcolm Butler appeared in 11 games with 1 start, recording 15 tackles and 3 passes defensed. He made his first start at defensive back against Miami on December 14, finishing with two tackles.</p>
+                        <p>On May 19, 2014, Butler signed with the New England Patriots after going undrafted in the 2014 NFL Draft.[5] In his rookie season, Malcolm Butler appeared in 11 games with 1 start, recording 15 tackles and 3 passes defensed. He made his first start at defensive back against Miami on December 14, finishing with two tackles.</p>
 
-                    <p>Butler was involved in two key plays in Super Bowl XLIX, including the biggest play of the game, an interception at the goalline. With the Patriots leading by four points, under a minute to play and Seattle making a final drive, Butler was matched up with wide receiver Jermaine Kearse. Seattle Seahawks quarterback Russell Wilson threw a 33-yard sideline pass to Kearse that Butler deflected. However, as Kearse fell to the ground, the tipped pass landed on him, he juggled it and eventually retained possession. Kearse's catch was widely reported as one of the greatest in Super Bowl history. After recognizing that Kearse had made the catch and was not down by contact, Butler pushed him out of bounds at the five-yard line.</p>
+                        <p>Butler was involved in two key plays in Super Bowl XLIX, including the biggest play of the game, an interception at the goalline. With the Patriots leading by four points, under a minute to play and Seattle making a final drive, Butler was matched up with wide receiver Jermaine Kearse. Seattle Seahawks quarterback Russell Wilson threw a 33-yard sideline pass to Kearse that Butler deflected. However, as Kearse fell to the ground, the tipped pass landed on him, he juggled it and eventually retained possession. Kearse's catch was widely reported as one of the greatest in Super Bowl history. After recognizing that Kearse had made the catch and was not down by contact, Butler pushed him out of bounds at the five-yard line.</p>
 
-                    <p>Two plays later, with 20 seconds remaining and the Seahawks on the Patriots' one-yard line, Butler intercepted a Wilson pass at the goal line, returning possession to the Patriots and maintaining the 28-24 lead. Butler said that he had guessed correctly that Wilson would throw to Ricardo Lockette, having read the Seahawks two receiver stack formation. "From preparation, I remembered the formation they were in ... I just beat him to the route and made the play." Butler gave credit to Patriots defensive coordinator Matt Patricia for preparing players well for the game. New England Patriots quarterback Tom Brady, who received a 2015 Chevrolet Colorado as part of his Super Bowl XLIX MVP Award, said he planned to give the truck to Butler.</p>
+                        <p>Two plays later, with 20 seconds remaining and the Seahawks on the Patriots' one-yard line, Butler intercepted a Wilson pass at the goal line, returning possession to the Patriots and maintaining the 28-24 lead. Butler said that he had guessed correctly that Wilson would throw to Ricardo Lockette, having read the Seahawks two receiver stack formation. "From preparation, I remembered the formation they were in ... I just beat him to the route and made the play." Butler gave credit to Patriots defensive coordinator Matt Patricia for preparing players well for the game. New England Patriots quarterback Tom Brady, who received a 2015 Chevrolet Colorado as part of his Super Bowl XLIX MVP Award, said he planned to give the truck to Butler.</p>
 
-                    <cite>Information courtesy of <a href="https://en.wikipedia.org/wiki/Malcolm_Butler_(American_football)">Wikipedia</a></cite>
+                        <cite>Information courtesy of <a href="https://en.wikipedia.org/wiki/Malcolm_Butler_(American_football)">Wikipedia</a></cite>
 
+                    </div>
+
+                </div>
+                <!-- // Bio -->
+
+
+                <!-- Sidebar -->
+                <div class="[ col-xs-12 col-md-4 ]">
+
+                    <h5 class="caps">Tweets from @Mac_BZ</h5>
+
+                    <a class="twitter-timeline" href="https://twitter.com/Mac_BZ" data-widget-id="563175181930491905">Tweets by @Mac_BZ</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                </div>
+                <!-- Sidebar -->
+
+            </div>
+        </main>
+
+        <footer class="sitefooter">
+            <div class="container">
+                <div class="row">
+
+                    <div class="[ col-xs-12 col-sm-6 ]">
+                        <p>&copy; Copyright 2015. Created by <!-- <img alt="Zed Workshop logo" src="./images/zed-logo.png"/ > --> <a href="http://zedworkshop.com" target="_blank">Zed Workshop</a></p>
+                    </div>
                 </div>
 
             </div>
-            <!-- // Bio -->
+        </footer>
 
 
-            <!-- Sidebar -->
-            <div class="[ col-xs-12 col-md-4 ]">
+        <script src="scripts/vendor.js"></script>
 
-                <h5 class="caps">Tweets from @Mac_BZ</h5>
+        <script src="scripts/main.js"></script>
 
-                <a class="twitter-timeline" href="https://twitter.com/Mac_BZ" data-widget-id="563175181930491905">Tweets by @Mac_BZ</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-59395018-1', 'auto');
+          ga('send', 'pageview');
+      </script>
 
-            </div>
-            <!-- Sidebar -->
-
-        </div>
-    </main>
-
-    <footer class="sitefooter">
-        <div class="container">
-            <div class="row">
-
-                <div class="[ col-xs-12 col-sm-6 ]">
-                    <p>&copy; Copyright 2015. Created by <!-- <img alt="Zed Workshop logo" src="./images/zed-logo.png"/ > --> <a href="http://zedworkshop.com" target="_blank">Zed Workshop</a></p>
-                </div>
-            </div>
-
-        </div>
-    </footer>
-
-
-    <script src="scripts/vendor.js"></script>
-
-    <script src="scripts/main.js"></script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-59395018-1', 'auto');
-      ga('send', 'pageview');
-  </script>
-
-</body>
-</html>
+  </body>
+  </html>

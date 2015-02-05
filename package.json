@@ -12,7 +12,6 @@
     "gulp-csso": "^0.2.9",
     "gulp-filter": "^1.0.2",
     "gulp-flatten": "0.0.4",
-    "gulp-imagemin": "^2.0.0",
     "gulp-jshint": "^1.9.0",
     "gulp-load-plugins": "^0.7.0",
     "gulp-notify": "^2.0.0",
@@ -21,6 +20,7 @@
     "gulp-sass": "^1.2.0",
     "gulp-size": "^1.1.0",
     "gulp-uglify": "^1.0.1",
+    "gulp-uncss": "^1.0.0",
     "gulp-useref": "^1.0.2",
     "gulp-util": "^3.0.1",
     "jshint-stylish": "^1.0.0",
@@ -32,6 +32,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "csstyle": "^1.1.0"
+    "csstyle": "^1.1.0",
+    "gulp-imagemin": "^2.1.0"
   }
 }

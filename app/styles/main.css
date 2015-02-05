@@ -585,6 +585,18 @@ cite {
   font-size: 0.71875rem;
   padding: 1em 0 0; }
 
+::-moz-selection {
+  background: #C80815;
+  color: #fff; }
+
+::selection {
+  background: #C80815;
+  color: #fff; }
+
+::-moz-selection {
+  background: #C80815;
+  color: #fff; }
+
 @media screen and (min-width: 38em)  {
   h3 {
     font-size: 18.9px;
@@ -3981,7 +3993,7 @@ progress[value] {
     text-align: right;
     color: #fff;
     font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
     text-shadow: rgba(0, 0, 0, 0.3) 3px 3px 5px; }
     .home-hero__quote p {
@@ -4060,7 +4072,7 @@ progress[value] {
           transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
           transition-duration: 1500ms;
           transition-delay: 600ms; }
-        .loaded .home-hero__quote {
+        .wf-active .home-hero__quote, .wf-inactive .home-hero__quote {
           opacity: 1;
           -webkit-transform: translateX(0);
               -ms-transform: translateX(0);

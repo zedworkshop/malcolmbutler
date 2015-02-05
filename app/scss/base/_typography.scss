@@ -211,6 +211,16 @@ cite {
     padding: 1em 0 0;
 }
 
+::selection {
+    background: $brand-alt;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: $brand-alt;
+    color: #fff;
+}
+
 @include media($small-screen-up) {
 
     h3 {
