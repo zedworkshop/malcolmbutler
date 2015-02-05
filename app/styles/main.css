@@ -694,6 +694,7 @@ body {
     Base layout styles from bootstrap.css
 ------------------------------------------------*/
 main {
+  margin-bottom: 5%;
   overflow-x: hidden; }
 
 .container, .container-narrow {
@@ -1874,7 +1875,6 @@ main {
       width: 16px; }
   @media screen and (min-width: 38em)  {
     .sitefooter {
-      margin-top: 6em;
       padding: 4em 0; } }
 
 /*
@@ -4131,3 +4131,10 @@ progress[value] {
 @media screen and (min-width: 38em)  {
   .row-snapshot {
     margin-bottom: 3.9em; } }
+
+/*
+    Contact area
+------------------------------------------------*/
+.contact-area {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%; }
