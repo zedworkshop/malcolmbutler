@@ -6,7 +6,11 @@
 	max-height: 0;
 	overflow: hidden;
 
-	display: none;
+	transition: max-height 300ms;
+
+	.nav-active & {
+		max-height: 200px;
+	}
 
 	@include media($small-screen-up) {
 		max-height: none;
@@ -14,5 +18,91 @@
 		transition: none;
 
 		float: right;
+	}
+}
+
+.nav {
+	margin: 0 -1em;
+	padding: 0;
+
+	li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		display: block;
+		padding: 0.5em 1em;
+
+		&:link,
+		&:visited {
+			color: $team-2;
+		}
+
+		&:hover,
+		&:active {
+			color: #fff;
+		}
+	}
+
+	@include media($small-screen-up) {
+
+		border: 3px solid #fff;
+		background: rgba($brand-black, 0.25);
+
+		margin: 1em;
+		padding: 1em;
+
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 1;
+
+		a {
+			&:link,
+			&:visited {
+				color: #fff;
+			}
+
+			&:hover {
+				background: $brand-alt;
+			}
+		}
+
+	}
+}
+
+
+.nav-button {
+	display: block;
+
+	font-family: $header-font-family;
+	font-weight: $font-bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	@include font-size(14);
+
+	height: 42px;
+	line-height: 42px;
+	padding: 0 1em;
+
+	position: absolute;
+	top: 50%;
+	margin-top: -21px;
+	right: 1em;
+
+	transition: all 100ms;
+
+	&:link,
+	&:visited,
+	&:hover {		
+		border: 1px solid #888;
+		color: #aaa;
+	}
+
+	&:active {
+		color: #fff;
+		border-color: #fff;
 	}
 }

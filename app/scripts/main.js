@@ -11,4 +11,15 @@ $(document).ready(function() {
         }, 1000);
     });
 
+    $('.js-nav-toggle').click(function(e) {
+        e.preventDefault();
+
+        if (!$('.nav-active').length) {
+            $('body').addClass('nav-active');
+        } else {
+            $('body').removeClass('nav-active');
+        }
+
+    });
+
 });

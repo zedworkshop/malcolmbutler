@@ -73,7 +73,8 @@ gulp.task('html', ['styles'], function() {
             ignore: [
                 '.fontface .home-hero__quote',
                 '.wf-active .home-hero__quote',
-                '.wf-inactive .home-hero__quote'
+                '.wf-inactive .home-hero__quote',
+                '.nav-active .sitenav'
             ]
         }))
         .pipe($.csso())

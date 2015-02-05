@@ -1820,8 +1820,9 @@ main {
 ------------------------------------------------*/
 .siteheader {
   background-color: #292929;
-  padding: 1em;
-  position: relative; }
+  padding: 1em; }
+  .siteheader-inner {
+    position: relative; }
   .siteheader .logo {
     color: #fff;
     margin: 0;
@@ -1849,12 +1850,14 @@ main {
     float: right;
     margin-top: 4px; }
   @media screen and (min-width: 38em)  {
-    .siteheader:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .siteheader .sitebrand {
-      float: left; } }
+    .siteheader {
+      position: relative; }
+      .siteheader:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .siteheader .sitebrand {
+        float: left; } }
 
 /*
 	Footer
@@ -1883,13 +1886,67 @@ main {
 .sitenav {
   max-height: 0;
   overflow: hidden;
-  display: none; }
+  transition: max-height 300ms; }
+  .nav-active .sitenav {
+    max-height: 200px; }
   @media screen and (min-width: 38em)  {
     .sitenav {
       max-height: none;
       overflow: visible;
       transition: none;
       float: right; } }
+
+.nav {
+  margin: 0 -1em;
+  padding: 0; }
+  .nav li {
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .nav a {
+    display: block;
+    padding: 0.5em 1em; }
+    .nav a:link, .nav a:visited {
+      color: #D6D6D6; }
+    .nav a:hover, .nav a:active {
+      color: #fff; }
+  @media screen and (min-width: 38em)  {
+    .nav {
+      border: 3px solid #fff;
+      background: rgba(41, 41, 41, 0.25);
+      margin: 1em;
+      padding: 1em;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 1; }
+      .nav a:link, .nav a:visited {
+        color: #fff; }
+      .nav a:hover {
+        background: #C80815; } }
+
+.nav-button {
+  display: block;
+  font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-size: 0.84375rem;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 1em;
+  position: absolute;
+  top: 50%;
+  margin-top: -21px;
+  right: 1em;
+  transition: all 100ms; }
+  .nav-button:link, .nav-button:visited, .nav-button:hover {
+    border: 1px solid #888;
+    color: #aaa; }
+  .nav-button:active {
+    color: #fff;
+    border-color: #fff; }
 
 fieldset {
   background: #fcfcfc;

@@ -10,7 +10,10 @@ $navlink-border-width: 4px;
 .siteheader {
 	background-color: $siteheader-bg;
 	padding: 1em;
-	position: relative;
+
+	&-inner {
+		position: relative;		
+	}
 
 	.logo {
 		color: #fff;
@@ -52,6 +55,7 @@ $navlink-border-width: 4px;
 
 	@include media($small-screen-up) {
 		@include clearfix;
+		position: relative;	
 
 		.sitebrand {
 			float: left;
