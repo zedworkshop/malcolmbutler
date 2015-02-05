@@ -54,7 +54,7 @@ gulp.task('html', ['styles'], function () {
     var cssFilter = $.filter('**/*.css');
     var assets = $.useref.assets();
 
-    return gulp.src(paths.dev + '/build.html')
+    return gulp.src(paths.dev + '/index.html')
         .pipe(assets)
         .pipe(jsFilter)
         .pipe($.uglify({preserveComments: $.uglifySaveLicense}))
@@ -116,7 +116,7 @@ gulp.task('watch', ['styles', 'serve'], function () {
 gulp.task('build', ['html', 'images', 'fonts']);
 
 gulp.task('bower', function () {
-    gulp.src(paths.dev + '/build.html')
+    gulp.src(paths.dev + '/index.html')
         .pipe(wiredep({
             exclude: [
 

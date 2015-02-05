@@ -32,7 +32,7 @@
 		figcaption {
 			margin-left: 0;
 			margin-right: 0;
-			width: 75%;
+			width: 65%;
 		}
 
 		// Pull-right
@@ -46,13 +46,14 @@
 		}
 	}
 
-	@include media($medium-screen-up) {
+	@include media($large-screen-up) {
 
 		// Pull-right
 		&--pull-r {
-			margin-right: -$gutter*2;
+			margin-right: -$gutter*8;
 			margin-left: $gutter * 2;
 			margin-bottom: $base-spacing * 3;
+			width: 70%;
 		}
 
 
