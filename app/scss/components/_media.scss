@@ -1,0 +1,106 @@
+/*
+	Images
+------------------------------------------------*/
+
+.photo {
+	margin-left: -$gutter;
+	margin-right: -$gutter;
+	margin-bottom: $base-spacing;
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	figcaption {
+		border-bottom: 4px solid $grey-subtle;
+		margin: 0 $gutter;
+		padding: $base-spacing/2 0;
+		@include font-size(13);
+
+		small {
+			color: $grey-mid;
+			display: block;
+			@include font-size(12);
+		}
+	}
+
+	@include media($small-screen-up) {
+		margin-left: 0;
+		margin-right: 0;
+
+		figcaption {
+			margin-left: 0;
+			margin-right: 0;
+			width: 75%;
+		}
+
+		// Pull-right
+		&--pull-r {
+			float: right;
+			width: 50%;
+			margin-top: 6px;
+			margin-right: -$gutter;
+			margin-left: $gutter;
+			margin-bottom: $base-spacing * 2;
+		}
+	}
+
+	@include media($medium-screen-up) {
+
+		// Pull-right
+		&--pull-r {
+			margin-right: -$gutter*2;
+			margin-left: $gutter * 2;
+			margin-bottom: $base-spacing * 3;
+		}
+
+
+	}
+}
+
+/*
+	Avatars
+------------------------------------------------*/
+
+.avatar {
+	border-radius: $base-border-radius * 2;
+	display: inline-block;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+
+	height: 100px;
+	width: 100px;
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	&-rd {
+		border-radius: 50%;
+	}
+
+	&-mini {
+		border-radius: $base-border-radius;
+		height: 25px;
+		width: 25px;
+	}
+
+	&-sm {
+		height: 50px;
+		width: 50px;
+	}
+
+	&-lg {
+		height: 150px;
+		width: 150px;
+	}
+
+	&-full {
+		width: 100%;
+		height: auto;
+	}
+}

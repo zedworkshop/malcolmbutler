@@ -1,0 +1,18 @@
+/*
+	Navigation
+------------------------------------------------*/
+
+.sitenav {
+	max-height: 0;
+	overflow: hidden;
+
+	display: none;
+
+	@include media($small-screen-up) {
+		max-height: none;
+		overflow: visible;
+		transition: none;
+
+		float: right;
+	}
+}

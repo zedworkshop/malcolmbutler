@@ -1,0 +1,61 @@
+/*
+	Header
+------------------------------------------------*/
+
+$siteheader-bg: $brand-black;
+$siteheader-height: 60px;
+$logo-height: $siteheader-height / 2;
+$navlink-border-width: 4px;
+
+.siteheader {
+	background-color: $siteheader-bg;
+	padding: 1em;
+	position: relative;
+
+	.logo {
+		color: #fff;
+		margin: 0;
+		@include font-size(24);
+
+		.numbers,
+		.text {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.numbers {
+			background: $team-2;
+			color: $team-1;
+			padding: 2px 3px;
+			letter-spacing: -1.5px;
+			margin-right: 4px;
+		}
+
+		.text {
+			text-transform: uppercase;
+			font-size: 0.85em;
+			letter-spacing: 1px;
+			margin: 0;
+
+			.small {
+				color: transparentize(#fff, 0.5);
+				display: block;
+				font-size: 0.5em;
+			}
+		}
+	}
+
+	.header-right {
+		float: right;
+		margin-top: 4px;
+	}
+
+	@include media($small-screen-up) {
+		@include clearfix;
+
+		.sitebrand {
+			float: left;
+		}
+
+	}
+}

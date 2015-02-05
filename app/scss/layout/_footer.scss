@@ -1,0 +1,35 @@
+/*
+	Footer
+------------------------------------------------*/
+
+.sitefooter {
+
+	background: $brand-primary;
+	border-top: 10px solid $brand-alt;
+
+	p {
+		color: #fff;
+		@include font-size(12);
+
+		a {
+			color: inherit;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			height: 16px;
+			width: 16px;
+		}
+	}
+
+
+	@include media($small-screen-up) {
+
+		margin-top: 6em;
+		padding: 4em 0;
+
+
+	}
+
+}

@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Adam Campbell -- design/dev -- @hotmeteor
+
+# THANKS
+
+    Congrats Malcolm Butler and the New England Patriots!
+    Shout out to Malcolm's agent Derek Simpson,
+    and to good friend Bill Fowler (@bill_fowler)
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Homemade concoctions
