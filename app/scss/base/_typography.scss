@@ -95,9 +95,9 @@ p {
     max-width: 35em;
     max-width: 35rem;
 
-    .content & {
-        text-align: justify;
-    }
+    // .content & {
+    //     text-align: justify;
+    // }
 
     &.standout {
         line-height: 1.3;
@@ -224,17 +224,18 @@ cite {
 @include media($small-screen-up) {
 
     h2,
-    .h2 {        
+    .h2 {
         @include font-size($base-font-size * 2);
     }
 
     h3,
     .h3 {
-        @include font-size($h4-font-size);
+        letter-spacing: 0.04em;
     }
 
     p {
         @include font-size($base-font-size * 1.1);
+        line-height: 1.5;
     }
 }
 
