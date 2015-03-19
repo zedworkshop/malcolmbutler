@@ -12,10 +12,9 @@
 	color $transition-quick;
 
 	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 12px;
-	font-size: rem(11.5);
+	// text-transform: uppercase;
+	// letter-spacing: 1px;
+	@include font-size(12);
 
 	background-color: $base-button-color;
 	// box-shadow: darken($base-button-color, 15) 0 1px 0;
@@ -52,11 +51,10 @@
 
 	// Action button
 	&-action {
-		background-color: $orange;
-		// box-shadow: darken($orange, 15) 0 1px 0;
+		background-color: $brand-alt;
 
 		&:hover {
-			background-color: darken($orange, 5);
+			background-color: darken($brand-alt, 5);
 		}
 	}
 

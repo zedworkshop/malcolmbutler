@@ -107,6 +107,10 @@ p {
             text-transform: uppercase
         }
     }
+
+    .align-center & {
+        max-width: none;
+    }
 }
 
 a {

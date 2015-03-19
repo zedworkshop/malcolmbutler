@@ -493,14 +493,14 @@ h4, .h4 {
 
 h5, .h5 {
   color: #C80815;
-  font-size: 16.1px;
-  font-size: 0.975rem;
+  font-size: 16.8px;
+  font-size: 1.01875rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
 h6, .h6 {
-  font-size: 14px;
-  font-size: 0.84375rem;
+  font-size: 15.4px;
+  font-size: 0.93125rem;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: .2em; }
@@ -517,6 +517,8 @@ p {
     text-align: left; }
     p.standout:first-line {
       text-transform: uppercase; }
+  .align-center p {
+    max-width: none; }
 
 a {
   transition: color 0.1s linear;
@@ -2339,8 +2341,6 @@ ul.default li {
   white-space: nowrap;
   transition: background 150ms, border 150ms, box-shadow 150ms, color 150ms;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: 12px;
   font-size: 0.71875rem;
   background-color: #0D254C; }
@@ -2360,9 +2360,9 @@ ul.default li {
       background-color: #c9c9c9;
       color: #3d3d3d; }
   .btn-action {
-    background-color: #FF8000; }
+    background-color: #C80815; }
     .btn-action:hover {
-      background-color: #e67300; }
+      background-color: #af0712; }
   .btn-alert {
     background-color: #bfa400;
     box-shadow: none; }
