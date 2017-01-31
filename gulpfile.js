@@ -68,15 +68,6 @@ gulp.task('html', ['styles'], function() {
         }))
         .pipe(jsFilter.restore())
         .pipe(cssFilter)
-        .pipe($.uncss({
-            html: [paths.dev + '/index.html'],
-            ignore: [
-                '.fontface .home-hero__quote',
-                '.wf-active .home-hero__quote',
-                '.wf-inactive .home-hero__quote',
-                '.nav-active .sitenav'
-            ]
-        }))
         .pipe($.csso())
         .pipe(cssFilter.restore())
         .pipe(assets.restore())
